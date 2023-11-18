@@ -26,7 +26,7 @@ const TaskItem = props => {
         />
         <div>
          <div className="estadoTexto">{description}</div>
-         <button onClick={tachar}>Completada</button>
+         <button>Completada</button>
          </div>
       </label>
     </Fragment>
