@@ -43,11 +43,16 @@ body {
 .TaskList button[disabled]{
   opacity: 0.1;
 }
-.tachar{
-  font-size: 8px;
-  color:pink;
-  height: 15px;
-  width: 15px;
+.nuevoItem{
+  flex-direction: row;
+}
+.tarea button{
+  font-size: 10px;
+  text-align: center;
+  background-color:pink;
+  height: 25px;
+  width: 70px;
+  flex-direction: column-reverse;
 }
 
 

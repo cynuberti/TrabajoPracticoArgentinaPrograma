@@ -24,7 +24,7 @@ const TaskItem = props => {
           defaultChecked={done}
           onChange={onChange}
         />
-        <div>
+        <div className="tarea">
          <div className="estadoTexto">{description}</div>
          <button>Completada</button>
          </div>
