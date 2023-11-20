@@ -44,7 +44,7 @@ const TaskList = props => {
             {list.length ? (
               <p>
                 <button className="boton-borrar" onClick={onClickRemoveItem}>
-                  Borrar terminadas.
+                  Borrar terminadas
                 </button>
               </p>
             ) : null}
