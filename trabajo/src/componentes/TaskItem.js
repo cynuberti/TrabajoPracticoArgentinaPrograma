@@ -2,9 +2,9 @@
 
 import React, { Fragment } from "react";
 
-//Recibimos de props la propiedad data y el metodo onChange
+//Recibimos de props la propiedad data y el método onChange
 //Obtenemos de data: id, description y done
-//En el atributo del inputt, agregamos el metodo onChange, cuando se 
+//En el atributo del input, agregamos el método onChange, cuando se 
 //da click, va a ejecutar el método.
 const TaskItem = props => {
   const {

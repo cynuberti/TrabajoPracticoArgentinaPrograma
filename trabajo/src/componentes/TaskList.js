@@ -2,7 +2,7 @@
 import React from "react";
 import TaskItem from "./TaskItem";
 
-//recibimos de props la propiedad list y el metodo setList, 
+//recibimos de props la propiedad list y el método setList, 
 //recorremos list con map, para generar los compoonentes de TaskItem
 
 const TaskList = props => {
@@ -11,7 +11,7 @@ const TaskList = props => {
       
         //Creamos un manejador de eventos onChange para el componente TaskItem
         //Creamos un método onChangeStatus, para el manejador de onChange
-        //onChangeStatus va a recibir los datos de TaksItem que haya cambiardo
+        //onChangeStatus va a recibir los datos de TaksItem que hayan cambiado
         //recoremos con map list y  actualizamos los valores
         const onChangeStatus = e => {
           const { name, checked} = e.target;
@@ -23,7 +23,7 @@ const TaskList = props => {
           setList(updateList);
         };
       
-        //El metodo onClickRemoveItem para manejar onClick
+        //El método onClickRemoveItem para manejar onClick
         //El método onClickRemoveItem filtra la lista eliminando todos los items
         // done == true y actualiza la lista con setList
         
@@ -37,7 +37,7 @@ const TaskList = props => {
         ));
 
         return (
-           //Si la list esta vacia mostramos: "No hay tareas pendientes"
+           //Si la list está vacía mostramos: "No hay tareas pendientes"
            //y ocultamos el boton-borrar.
           <div className="TaskList">
             {list.length ? chk : "No hay tareas pendientes."}
