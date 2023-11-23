@@ -1,6 +1,6 @@
 
 html {
-  background: #ddd;  
+  background: rgb(214, 214, 243);  
   height: 100%;
   display: flex;
 }
@@ -14,11 +14,13 @@ body {
 }
 .encabezado{
   font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 .TaskList {
   display: block;
   background: #fff;
-  font-size: 15px;
+  font-size: 25px;
   max-width: 300px;
   margin: auto;
   margin-bottom: 20px;
@@ -26,32 +28,37 @@ body {
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 .TaskList .input{
+  font-size: 20px;
   padding: 20px;
-  background-color: #605e5e;
+  background-color: rgb(181, 240, 197);
+  width: auto;
 }
 /** BUTTONS*/
 .TaskList button {
   outline: none;
   padding: 8px;
   margin: 10px;
-  font-size: 15px;
+  width: auto;
+  font-size: 20px;
   border: 0px solid;
   border-radius: 5px;
   color: white;
-  background-color: green;
+  background-color: rgb(47, 178, 91);
 }
 .TaskList button[disabled]{
-  opacity: 0.1;
+  opacity: 0.4;
 }
 .nuevoItem{
   flex-direction: row;
+  font-size: 20px;
+  width: auto;
 }
 .tarea button{
-  font-size: 10px;
+  font-size: 20px;
   text-align: center;
-  background-color:pink;
-  height: 25px;
-  width: 70px;
+  background-color:rgb(87, 204, 101);
+  height: auto;
+  width: auto;
   flex-direction: column-reverse;
 }
 
