@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 const TaskForm = props => {
-	//recibimos de prop el metodo handleAddItem para mandar el nuevo registro (id, done, description)
+	//recibimos de prop el método handleAddItem para mandar el nuevo registro (id, done, description)
 	const { handleAddItem } = props;
 	const [description, setDescription] = useState("");
 	//Creamos un manejador de evento onsubmit,

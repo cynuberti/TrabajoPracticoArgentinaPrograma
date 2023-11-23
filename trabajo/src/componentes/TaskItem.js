@@ -1,5 +1,3 @@
-
-
 import React, { Fragment } from "react";
 
 //Recibimos de props la propiedad data y el metodo onChange
@@ -13,34 +11,32 @@ const TaskItem = props => {
   } = props;
 
 
+  // El valor de checked actualiza el estilo mediante done
+  const controlTachado = done ? {
+    textDecoration: 'line-through'
+  } : null;
 
   return (
     <Fragment>
-      <label className="nuevoItem">
+      <label className="nuevoItem"
+        style={controlTachado} //obtiene el estilo 
+      >
         <input
           className="estadoItem"
           name={id}
           type="checkbox"
-          defaultChecked={done}
-          onChange={onChange}
+          checked={done} 
+          
+          //Cuando cambia captura el valor de checked (capturado en el evento e de input) para el input con name:id que desencadenó el evento.
+          onChange={e => onChange({target: {name: id,checked: e.target.checked}})} 
         />
         <div className="tarea">
-         <div className="estadoTexto">{description}</div>
-         <button>Completada</button>
-         </div>
+          <div className="estadoTexto" >{description}</div>
+        </div>
       </label>
     </Fragment>
-     
+
   );
-  
-  /* NO FUNCIONA 
-  function tachar(onClick) {
-    const elem = document.getElementById("estadoTexto");
-    elem.style.textdecoration = "line-trough"; 
-  }
-*/
-
 };
-
 
 export default TaskItem;
