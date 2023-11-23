@@ -40,7 +40,7 @@ const TaskList = props => {
            //Si la list está vacía mostramos: "No hay tareas pendientes"
            //y ocultamos el boton-borrar.
           <div className="TaskList">
-            {list.length ? chk : "No hay tareas pendientes."}
+            {list.length ? chk : "No hay tareas pendientes"}
             {list.length ? (
               <p>
                 <button className="boton-borrar" onClick={onClickRemoveItem}>
